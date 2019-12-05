@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position</title>
+    <style>
+     body,html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* .boxOne {                  fix 기능
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      .boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        /* 이 픽스를 하게 되면 스크롤 내려도 위치 그대로 따라옴. */
+        /* top: 10px; right, left 등등
+        bottom: 10px;} */
+        .abs-box{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+            /* relative를 적음으로 인해 밑에 absolute가 붙어다니게 된다 */
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+  </head>
+  <!-- <body>   fix 기능
+    <div class="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div class="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+  </body>
+</html>

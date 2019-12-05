@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box model</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        background-color: green;
+        height: 100%;
+      }
+      .box {
+        background-color: yellow;
+        width: 50%;
+        height: 50%;
+        padding: 30px 10px 5px 5px;
+
+        margin: 50px 10px 5px 5px;
+        /* 상 우 아래 왼 적용된거임
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-top: 50px;
+        margin-left: 50px; */
+      }
+      .inside-box {
+        background-color: blue;
+        width: 50%;
+        height: 50%;
+        border: 5px dashed red;
+        /* 폭 , 스타일 , 컬러 순서 
+        border-width: 5px;
+        border-color: red;
+        border-style: dashed; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- .box>.inside-box -->
+    <div class="box">
+      <div class="inside-box"></div>
+    </div>
+  </body>
+</html>

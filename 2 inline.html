@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+    <style>
+      .box {
+        background-color: red;
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        display: inline-block;
+        /* inline-block이걸 하게 되면 세로로되어 있던 블록3개가 가로로 배열 
+        그냥 인라인만 적으면 모든 property 요소 설정값이 사라짐.
+         박스 다 사라짐
+        Display에 그냥 block하면 세로 3상자 그러나 inline-block을 하게되면
+        inline은 텍스트 처럼 되기에 상자가 가로로 3개 생기는 것이다.*/
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+  </body>
+</html>
